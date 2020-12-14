@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  background-color: #d45749;
+  height: 6rem;
+  width: 100%;
+}
+.header__logo-img {
+  width: 85%;
+}
+.header__ul {
+  margin-bottom: 0;
+}
+.header__ul-li, .header__ul-icon, .header__ul-a {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 600;
+}
+.header__ul-icon:hover, .header__ul-a:hover {
+  color: #eeeeee;
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    margin-left: 2rem;
+  }
+  .header__ul {
+    margin: 0 9rem 2rem 0;
+  }
+  .header__ul-icon {
+    padding: 0 3rem;
+    cursor: pointer;
+  }
+  .header__ul-a, .header__ul-dot {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: 10rem;
+  }
+  .header__logo {
+    margin: 0.8rem 0 0 0;
+  }
+  .header__logo-img {
+    width: 13rem;
+    height: auto;
+  }
+  .header__ul {
+    margin: 0 0 1rem 0;
+  }
+  .header__ul-icon {
+    padding: 0 1rem;
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

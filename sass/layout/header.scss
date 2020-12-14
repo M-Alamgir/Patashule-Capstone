@@ -1,0 +1,78 @@
+.header {
+  background-color: $color-primary;
+  height: 6rem;
+  width: 100%;
+
+  &__logo {
+    &-img {
+      width: 85%;
+    }
+  }
+
+  &__ul {
+    margin-bottom: 0;
+
+    &-li,
+    &-icon,
+    &-a {
+      @include reuse(1.3rem, $color-white, 600);
+    }
+
+    &-icon:hover,
+    &-a:hover {
+      color: $color-offwhite;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    &__logo {
+        margin-left: 2rem;
+    }
+
+    &__ul {
+      margin: 0 9rem 2rem 0;
+
+      &-icon {
+        padding: 0 3rem;
+        cursor: pointer;
+      }
+
+      &-a,
+      &-dot {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 10rem;
+
+    &__logo {
+      margin: 0.8rem 0 0 0;
+
+      &-img {
+        width: 13rem;
+        height: auto;
+      }
+    }
+
+    &__ul {
+      margin: 0 0 1rem 0;
+
+      &-icon {
+        padding: 0 1rem;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}

@@ -3,3 +3,8 @@
     color: $color;
     font-weight: $weight;
 }
+
+@mixin footer-reuse($color, $height) {
+    background-color: $color;
+    height: $height;
+}

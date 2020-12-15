@@ -66,13 +66,13 @@
     }
 
     &--text {
-        @include reuse(1.4rem, $color-grey, 500);
+      @include reuse(1.4rem, $color-grey, 500);
     }
 
     &--link,
     &--link:hover {
-        text-decoration: none;
-        color: $color-primary;
+      text-decoration: none;
+      color: $color-primary;
     }
   }
 
@@ -99,11 +99,88 @@
   @include footer-reuse($color-dark, 4rem);
 
   &__icon {
-      @include reuse(2rem, $color-btn, 500);
-      margin-right: 1rem;
+    @include reuse(2rem, $color-btn, 500);
+    margin-right: 1rem;
+    cursor: pointer;
   }
 
   &__text {
     @include reuse(1.3rem, $color-btn, 500);
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__ul {
+      &-a,
+      &-a:hover {
+        @include reuse(1.4rem, $color-white, 600);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    @include footer-reuse($color-black, 15rem);
+
+    &__ul {
+      &-li {
+        padding: 1.6rem 1.8rem;
+      }
+
+      &-a,
+      &-a:hover {
+        @include reuse(1.2rem, $color-white, 600);
+      }
+    }
+
+    &__circle {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__secondary {
+    @include footer-reuse($color-black, 30rem);
+    padding: 0 4rem;
+
+    &-container {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .low-res {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-extra {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .footer {
+    @include footer-reuse($color-black, 50rem);
+
+    &__ul {
+      flex-direction: column;
+    }
+  }
+
+  .footer__secondary {
+    @include footer-reuse($color-black, 35rem);
+  }
+
+  .footer-bottom {
+
+    &__icon {
+      @include reuse(1.5rem, $color-btn, 500);
+    }
   }
 }

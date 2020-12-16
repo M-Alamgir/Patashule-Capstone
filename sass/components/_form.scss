@@ -1,0 +1,32 @@
+.form {
+    padding: 2rem;
+
+    &__label {
+        @include reuse(1.2rem, $color-dark, 600);
+        margin: 1rem 0.3rem;
+    }
+
+    &__input {
+        border: none;
+        border-bottom: 1px dotted $color-grey-dark;
+        background-color: $color-grey-light;
+        padding: 1.2rem;
+        border-radius: 0.3rem;
+    }
+
+    &__btn {
+        padding: 1rem;
+        border: none;
+        border-radius: 0.3rem;
+
+        &-1 {
+            @include reuse(1.5rem, $color-white, 600);
+            background-color: $color-primary;
+            margin-right: 1rem
+        }
+
+        &-2 {
+            @include reuse(1.5rem, $color-grey-dark, 600);
+        }
+    }
+}

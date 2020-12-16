@@ -3,7 +3,7 @@
 This Project is part of Microverse program built with HTML5, CCS3 and bootstrap.
 The website is fully responsive with the help of three media query breakpoints (the default being the smaller viewport), namely: < 768px, >= 768px, >= 1024px, >= 1280px.
 
-![screenshot of TheNewsWeek](./images/image.png)
+![screenshot of Patashule](./images/image.png)
 
 
 ## Built With

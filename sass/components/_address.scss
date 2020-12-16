@@ -42,22 +42,22 @@
 }
 
 .address-text {
-    @include reuse(1.5rem, $color-dark, 500);
+  @include reuse(1.5rem, $color-dark, 500);
 }
 
 .address-link {
-    @include footer-reuse($color-grey-light, 7rem);
-    padding-left: 2rem;
+  @include footer-reuse($color-grey-light, 7rem);
+  padding-left: 2rem;
 
-    &__a {
-        @include reuse(2rem, $color-dark, 500);
-        text-decoration: none;
-        word-spacing: 1px;
-    }
+  &__a {
+    @include reuse(2rem, $color-dark, 500);
+    text-decoration: none;
+    word-spacing: 1px;
+  }
 
-    &__a:hover {
-        color: $color-grey-dark;
-    }
+  &__a:hover {
+    color: $color-grey-dark;
+  }
 }
 
 @media (max-width: 768px) {
@@ -72,7 +72,7 @@
 
   .address-text,
   .address-link {
-      padding: 0 1rem;
+    padding: 0 1rem;
   }
 }
 

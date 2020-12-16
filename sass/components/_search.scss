@@ -51,14 +51,19 @@
 
   &__container {
     height: 50rem;
-    background-image: linear-gradient(to right, rgba($color-primary, 95%), rgba($color-primary, 95%)), url(../images/cap.png);
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 95%),
+        rgba($color-primary, 95%)
+      ),
+      url(../images/cap.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 
     &-txt {
-        @include reuse(1.8rem, $color-white, 500);
-        margin-top: 15rem;
+      @include reuse(1.8rem, $color-white, 500);
+      margin-top: 15rem;
     }
   }
 }

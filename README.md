@@ -14,7 +14,7 @@ The website is fully responsive with the help of three media query breakpoints (
 
 ## Live Demo
 
-[Live Demo Link](https://ourandco.github.io/Patashule-Capston/)
+[Live Demo Link](https://ourandco.github.io/Patashule-Capstone/)
 
 
 ## How To Use 🔧

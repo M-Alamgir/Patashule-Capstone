@@ -24,19 +24,23 @@
 
   &__title {
     @include reuse(2.2rem, $color-white, 700);
+
     word-spacing: 0.2rem;
     margin-bottom: 2rem;
   }
 
   &__txt {
     @include reuse(1.4rem, $color-white, 600);
+
     margin-bottom: 4rem;
     width: 70%;
   }
 
   &__btn {
     padding: 0.8rem 1rem;
+    
     @include reuse(1.4rem, $color-primary-light, 600);
+
     border: none;
     background-color: $color-white;
     border-radius: 0.3rem;

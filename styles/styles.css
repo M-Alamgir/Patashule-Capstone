@@ -39,7 +39,7 @@ body {
 
 .header__ul-icon:hover,
 .header__ul-a:hover {
-  color: #eeeeee;
+  color: #eee;
 }
 
 @media (max-width: 1024px) {
@@ -55,7 +55,7 @@ body {
     padding: 0 3rem;
     cursor: pointer;
   }
-  
+
   .header__ul-a,
   .header__ul-dot {
     display: none;
@@ -347,7 +347,7 @@ body {
 }
 
 .search {
-  background-color: #eeeeee;
+  background-color: #eee;
   height: 30rem;
   margin-top: 7rem;
 }
@@ -407,12 +407,7 @@ body {
 
 .search-result__container {
   height: 50rem;
-  background-image: linear-gradient(
-      to right,
-      rgba(212, 87, 73, 0.95),
-      rgba(212, 87, 73, 0.95)
-    ),
-    url(../images/cap.png);
+  background-image: linear-gradient(to right, rgba(212, 87, 73, 0.95), rgba(212, 87, 73, 0.95)), url(../images/cap.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -431,7 +426,7 @@ body {
 
 @media (max-width: 576px) {
   .search {
-    background-color: #eeeeee;
+    background-color: #eee;
     height: 40rem;
   }
 }
@@ -493,7 +488,7 @@ body {
 }
 
 .address-link {
-  background-color: #eeeeee;
+  background-color: #eee;
   height: 7rem;
   padding-left: 2rem;
 }
@@ -555,6 +550,9 @@ body {
   overflow: hidden;
   background: none !important;
   height: 500px;
+}
+
+.canvas-iframe {
   width: 100%;
 }
 
@@ -572,7 +570,7 @@ body {
 .form__input {
   border: none;
   border-bottom: 1px dotted #96908e;
-  background-color: #eeeeee;
+  background-color: #eee;
   padding: 1.2rem;
   border-radius: 0.3rem;
 }
@@ -600,12 +598,7 @@ body {
 .home {
   position: relative;
   height: 60vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("../images/school.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../images/school.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -638,7 +631,6 @@ body {
 .home__overlay-form--input {
   width: 75%;
   border: none;
-  border-radius: none;
   padding: 1.2rem;
 }
 
@@ -668,7 +660,6 @@ body {
     font-size: 2rem;
     color: #fff;
     font-weight: 700;
-    letter-spacing: 0rem;
   }
 
   .home__overlay-group {
@@ -698,10 +689,6 @@ body {
   .home__overlay-box {
     padding: 0.8rem 0 0 1.5rem;
   }
-  
-  .home__overlay-box {
-    padding: 0.8rem 0 0 1.5rem;
-  }
 
   .home__overlay-form--label {
     font-size: 1rem;
@@ -722,6 +709,7 @@ body {
 
 .row {
   margin-right: 0;
+
   --bs-gutter-y: 1.5rem;
 }
 
@@ -786,10 +774,7 @@ body {
     flex-direction: column;
   }
 
-  .about-container__one {
-    height: 45rem;
-  }
-  
+  .about-container__one,
   .about-container__two {
     height: 45rem;
   }
@@ -809,7 +794,7 @@ body {
     word-spacing: 0.1rem;
     margin-bottom: 1rem;
   }
-  
+
   .about-container__txt {
     font-size: 1.1rem;
     font-weight: 500;

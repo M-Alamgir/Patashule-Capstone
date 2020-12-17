@@ -23,10 +23,18 @@
                 <a href="./index.html"><img class="header__logo-img" src="./images/logo2.png" alt="logo"></a>
             </div>
             <ul class="list-unstyled d-flex justify-content-end align-items-center header__ul">
-                <li class="header__ul-li mx-3"><a href="./schools.html"><i class="header__ul-icon fas fa-search mx-2"></i></a><a class="text-decoration-none header__ul-a" href="./schools.html">COLLEGES</a></li>
-                <li class="header__ul-li mx-3"><a href="./index.html#about-section"><i class="header__ul-icon far fa-user mx-2"></i></a><a class="text-decoration-none header__ul-a" href="./index.html#about-section">ABOUT</a></li>
-                <li class="header__ul-li mx-3"><a href="./index.html#footer-section"><i class="header__ul-icon fas fa-rss mx-2"></i></a><a class="text-decoration-none header__ul-a" href="./index.html#footer-section">BLOG</a></li>
-                <li class="header__ul-li mx-3"><a href="#"><i class="header__ul-icon fas fa-bars mx-2"></i></a><a class="text-decoration-none header__ul-a" href="#">MORE</a><span class="header__ul-dot">...</span></li>
+                <li class="header__ul-li mx-3"><a href="./schools.html"><i
+                            class="header__ul-icon fas fa-search mx-2"></i></a><a
+                        class="text-decoration-none header__ul-a" href="./schools.html">COLLEGES</a></li>
+                <li class="header__ul-li mx-3"><a href="./index.html#about-section"><i
+                            class="header__ul-icon far fa-user mx-2"></i></a><a
+                        class="text-decoration-none header__ul-a" href="./index.html#about-section">ABOUT</a></li>
+                <li class="header__ul-li mx-3"><a href="./index.html#footer-section"><i
+                            class="header__ul-icon fas fa-rss mx-2"></i></a><a class="text-decoration-none header__ul-a"
+                        href="./index.html#footer-section">BLOG</a></li>
+                <li class="header__ul-li mx-3"><a href="#"><i class="header__ul-icon fas fa-bars mx-2"></i></a><a
+                        class="text-decoration-none header__ul-a" href="#">MORE</a><span
+                        class="header__ul-dot">...</span></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +53,7 @@
                     <div class="d-flex flex-column margin-right">
                         <label class="search__container-label" for="country">COUNTRY:</label>
                         <select class="bg-white search__container-input" name="country" id="country">
-                            <option value="null"></option>
+                            <option value="select">-</option>
                             <option value="pakistan">Pakistan</option>
                             <option value="usa">New Zealand</option>
                             <option value="united states">United States</option>
@@ -54,7 +62,7 @@
                     <div class="d-flex flex-column margin-right">
                         <label class="search__container-label" for="level">LEVEL:</label>
                         <select class="bg-white search__container-input" name="level" id="level">
-                            <option value="null"></option>
+                            <option value="select">-</option>
                             <option value="kindergaten">1st Year</option>
                             <option value="primary">2nd Year</option>
                             <option value="secondary">Final Year</option>
@@ -63,7 +71,7 @@
                     <div class="d-flex flex-column margin-right">
                         <label class="search__container-label" for="type">TYPE:</label>
                         <select class="bg-white search__container-input" name="type" id="type">
-                            <option value="null"></option>
+                            <option value="select">-</option>
                             <option value="Type 1A">Type 1A</option>
                             <option value="Type 1B">Type 2B</option>
                             <option value="Type 1C">Type 3C</option>
@@ -72,15 +80,15 @@
                     <div class="d-flex flex-column margin-right">
                         <label class="search__container-label" for="Gender">GENDER:</label>
                         <select class="bg-white search__container-input" name="Gender" id="Gender">
-                            <option value="null"></option>
+                            <option value="select">-</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
                     </div>
                     <div class="d-flex flex-column margin-right">
-                        <label class="search__container-label" for="CURRICULLUM">CURRICULUM:</label>
-                        <select class="bg-white search__container-input" name="CURRICULUM" id="CURRICULUM">
-                            <option value="null"></option>
+                        <label class="search__container-label" for="curriculum">CURRICULUM:</label>
+                        <select class="bg-white search__container-input" name="CURRICULUM" id="curriculum">
+                            <option value="select">-</option>
                             <option value="Business">Business</option>
                             <option value="Arts">Arts</option>
                         </select>
@@ -106,7 +114,8 @@
                         </div>
                         <div class="col-12 col-sm-6 address__col">
                             <div class="address__col-list">
-                                <p class="address__col-list--p">LEVEL: <span class="text-primary">Second Year.</span></p>
+                                <p class="address__col-list--p">LEVEL: <span class="text-primary">Second Year.</span>
+                                </p>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 address__col">
@@ -167,8 +176,8 @@
                 <div class="col-12 col-md-6 mx-auto">
                     <div class="address-link d-flex justify-content-start align-items-center">
                         <div>
-                            <a class="address-link__a" href="#" class="text-decoration-none"><i
-                                    class="fas fa-arrow-right"></i> &nbsp; <i class="fas fa-list"></i> &nbsp; CLICK TO
+                            <a href="#" class="address-link__a text-decoration-none"><i class="fas fa-arrow-right"></i>
+                                &nbsp; <i class="fas fa-list"></i> &nbsp; CLICK TO
                                 VIEW MORE DETAILS.</a>
                         </div>
                     </div>
@@ -181,9 +190,8 @@
                         <h3 class="map__title"><i class="fas fa-map-signs"></i> MAP DIRECTIONS</h3>
                     </div>
                     <div class="google-map">
-                        <div class="canvas"><iframe width="100%" height="500" id="gmap_canvas"
-                                src="https://maps.google.com/maps?q=sialkot&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        <div class="canvas"><iframe class="canvas-iframe" height="500" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=sialkot&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
                                 href="https://sites.google.com/view/maps-api-v2/mapv2"></a></div>
                     </div>
                 </div>
@@ -214,7 +222,7 @@
                         </div>
                         <div class="form-group d-flex flex-column">
                             <label class="form__label" for="cpassword">CONFIRM PASSWORD:*</label>
-                            <input class="form__input" type="cpassword" id="cpassword" placeholder="Confirm Password">
+                            <input class="form__input" type="password" id="cpassword" placeholder="Confirm Password">
                         </div>
                         <div class="my-3">
                             <button class="form__btn form__btn-1" type="button">Sign up</button>

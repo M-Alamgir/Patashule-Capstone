@@ -19,6 +19,7 @@
 
   &__heading {
     @include reuse(1.7rem, $color-dark, 700);
+    
     margin-bottom: 2.5rem;
   }
 

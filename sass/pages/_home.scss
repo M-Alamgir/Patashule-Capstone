@@ -1,18 +1,14 @@
 .home {
   position: relative;
   height: 60vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("../images/school.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../images/school.jpg");
   background-size: cover;
   background-position: center;
 
   &__overlay {
     &-title {
       @include reuse(2.4rem, $color-white, 800);
+
       letter-spacing: 0.2rem;
     }
 
@@ -36,7 +32,6 @@
       &--input {
         width: 75%;
         border: none;
-        border-radius: none;
         padding: 1.2rem;
       }
 
@@ -44,7 +39,9 @@
         width: 10rem;
         padding: 1rem;
         border: none;
+
         @include reuse(1.2rem, $color-white, 600);
+        
         background-color: $color-primary;
       }
     }
@@ -55,7 +52,9 @@
       border: none;
       border-radius: 0.2rem;
       padding: 0.8rem 1rem;
+
       @include reuse(1.5rem, $color-dark, 500);
+      
       background-color: $color-btn;
       margin-top: 1.8rem;
     }
@@ -67,7 +66,6 @@
     &__overlay {
       &-title {
         @include reuse(2rem, $color-white, 700);
-        letter-spacing: 0rem;
       }
 
       &-group {
@@ -97,9 +95,6 @@
       &-group {
         margin: 9rem 3rem;
       }
-      &-box {
-        padding: 0.8rem 0 0 1.5rem;
-      }
 
       &-box {
         padding: 0.8rem 0 0 1.5rem;
@@ -125,5 +120,6 @@
 
 .row {
   margin-right: 0;
+
   --bs-gutter-y: 1.5rem;
 }

@@ -1,4 +1,4 @@
-# Patashule Capston
+# Patashule capstone
 
 This Project is part of Microverse program built with HTML5, CCS3 and bootstrap.
 The website is fully responsive with the help of three media query breakpoints (the default being the smaller viewport), namely: < 768px, >= 768px, >= 1024px, >= 1280px.
@@ -17,17 +17,26 @@ The website is fully responsive with the help of three media query breakpoints (
 [Live Demo Link](https://ourandco.github.io/Patashule-Capston/)
 
 
-## Getting Started
+## How To Use 🔧
+
+From your command line, first clone the project:
+
+- `Clone this repository`
+- `git clone https://github.com/ourandco/Patashule-Capston.git`
+- `Go into the repository`
+- `cd Patashule-capstone`
+- `git pull`
 
 **Clone the project and feel free to make changes.**
 
-## Authors
+## Author
 
 - Alamgir
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@ourandco](https://github.com/ourandco)
+- Twitter: [@Alphacrescent1](https://twitter.com/alphacrescent1)
 
 ## 🤝 Contributing
 

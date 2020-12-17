@@ -716,6 +716,7 @@ body {
   .home__overlay-form--btn {
     width: 95%;
     margin-top: 1rem;
+    background-color: #d45749;
   }
 }
 

@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  
+
   @include footer-reuse($color-black, 20rem);
 
   &__nav {
@@ -37,6 +37,7 @@
     transform: translate(-50%, -50%);
 
     @include footer-reuse($color-black, 14rem);
+
     width: 14rem;
     border-radius: 50%;
     border: 1px solid $color-white;

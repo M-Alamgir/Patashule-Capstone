@@ -41,7 +41,7 @@
         border: none;
 
         @include reuse(1.2rem, $color-white, 600);
-        
+
         background-color: $color-primary;
       }
     }
@@ -54,7 +54,7 @@
       padding: 0.8rem 1rem;
 
       @include reuse(1.5rem, $color-dark, 500);
-      
+
       background-color: $color-btn;
       margin-top: 1.8rem;
     }

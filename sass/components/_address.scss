@@ -57,7 +57,7 @@
 
   &__a {
     @include reuse(2rem, $color-dark, 500);
-    
+
     text-decoration: none;
     word-spacing: 1px;
   }

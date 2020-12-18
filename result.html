@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Patashule - Schools</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="container-xl d-flex justify-content-between align-items-center h-100 header__nav">
+            <div class="header__logo">
+                <a href="./index.html"><img class="header__logo-img" src="./images/logo2.png" alt="logo"></a>
+            </div>
+            <ul class="list-unstyled d-flex justify-content-end align-items-center header__ul">
+                <li class="header__ul-li mx-3"><a href="./schools.html"><i
+                            class="header__ul-icon fas fa-search mx-2"></i></a><a
+                        class="text-decoration-none header__ul-a" href="./schools.html">COLLEGES</a></li>
+                <li class="header__ul-li mx-3"><a href="./index.html#about-section"><i
+                            class="header__ul-icon far fa-user mx-2"></i></a><a
+                        class="text-decoration-none header__ul-a" href="./index.html#about-section">ABOUT</a></li>
+                <li class="header__ul-li mx-3"><a href="./index.html#footer-section"><i
+                            class="header__ul-icon fas fa-rss mx-2"></i></a><a class="text-decoration-none header__ul-a"
+                        href="./index.html#footer-section">BLOG</a></li>
+                <li class="header__ul-li mx-3"><a href="#"><i class="header__ul-icon fas fa-bars mx-2"></i></a><a
+                        class="text-decoration-none header__ul-a" href="#">MORE</a><span
+                        class="header__ul-dot">...</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="search">
+            <div class="container-xl search__container py-5">
+                <div class="d-flex justify-content-center mb-5">
+                    <h1 class="search__container-title">Filter by name, country, education system, College level:</h1>
+                </div>
+                <div class="d-flex align-items-center flex-wrap">
+                    <div class="d-flex flex-column margin-right">
+                        <label class="search__container-label" for="name">College NAME:*</label>
+                        <input class="search__container-input" type="text" id="name">
+                    </div>
+                    <div class="d-flex flex-column margin-right">
+                        <label class="search__container-label" for="country">COUNTRY:</label>
+                        <select class="bg-white search__container-input" name="country" id="country">
+                            <option value="select">-</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="usa">New Zealand</option>
+                            <option value="united states">United States</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column margin-right">
+                        <label class="search__container-label" for="level">LEVEL:</label>
+                        <select class="bg-white search__container-input" name="level" id="level">
+                            <option value="select">-</option>
+                            <option value="kindergaten">1st Year</option>
+                            <option value="primary">2nd Year</option>
+                            <option value="secondary">Final Year</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column margin-right">
+                        <label class="search__container-label" for="type">TYPE:</label>
+                        <select class="bg-white search__container-input" name="type" id="type">
+                            <option value="select">-</option>
+                            <option value="Type 1A">Type 1A</option>
+                            <option value="Type 1B">Type 2B</option>
+                            <option value="Type 1C">Type 3C</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column margin-right">
+                        <label class="search__container-label" for="Gender">GENDER:</label>
+                        <select class="bg-white search__container-input" name="Gender" id="Gender">
+                            <option value="select">-</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="d-flex flex-column margin-right">
+                        <label class="search__container-label" for="curriculum">CURRICULUM:</label>
+                        <select class="bg-white search__container-input" name="CURRICULUM" id="curriculum">
+                            <option value="select">-</option>
+                            <option value="Business">Business</option>
+                            <option value="Arts">Arts</option>
+                        </select>
+                    </div>
+                    <div class="d-flex">
+                        <button class="search__container-btn search__container-btn1" type="button">Search</button>
+                        <button class="search__container-btn search__container-btn2" type="button"><i
+                                class="fas fa-pencil-alt"></i> Clear Filter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto address">
+                    <h3 class="address__title"><i class="fas fa-shield-alt"></i> ST. PETER</h3>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">TYPE:</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">LEVEL: <span class="text-primary">Second Year.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">SYSTEM:</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">GENDER: <span class="text-primary">FEMALE</span></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">COUNTRY: <span class="text-primary">Pakistan</span></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">EMAIL: <span class="text-primary">peter@info.com</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">RESIDENCE: <span class="text-primary">Boarding</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 address__col">
+                            <div class="address__col-list">
+                                <p class="address__col-list--p">Performance: <span class="text-primary">8+</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="address__btn" type="button"><i class="fas fa-envelope"></i> APPLY</button>
+                    </div>
+                    <div class="address__footer d-flex justify-content-end">
+                        <span><i class="fas fa-phone-alt text-primary"></i> TELL: </span><span><i
+                                class="fas fa-bus-alt text-primary"></i> TRANSPORT: <span class="text-primary"> YES
+                            </span></span><span> <i class="fas fa-tv text-primary"></i> WEBSITE: <span
+                                class="text-success">ST.COM </span></span><span><i
+                                class="fas fa-user-graduate text-primary"></i> COLLEGES ENROLLED: <span
+                                class="text-primary"> 870 </span></span><span> COLLEGE SUPPORT: <span
+                                class="text-primary">YES</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto">
+                    <p class="address-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum
+                        aut accusamus accusantium, voluptate sunt velit, quos nisi numquam iusto quasi praesentium error
+                        officiis facilis commodi ipsam optio dolores nesciunt.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto">
+                    <div class="address-link d-flex justify-content-start align-items-center">
+                        <div>
+                            <a href="#" class="address-link__a text-decoration-none"><i class="fas fa-arrow-right"></i>
+                                &nbsp; <i class="fas fa-list"></i> &nbsp; CLICK TO
+                                VIEW MORE DETAILS.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 mx-auto">
+                    <div class="map d-flex justify-content-center">
+                        <h3 class="map__title"><i class="fas fa-map-signs"></i> MAP DIRECTIONS</h3>
+                    </div>
+                    <div class="google-map">
+                        <div class="canvas"><iframe class="canvas-iframe" height="500" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=sialkot&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                                href="https://sites.google.com/view/maps-api-v2/mapv2"></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-4 mx-auto">
+                    <form action="#" class="form">
+                        <div class="form-group d-flex flex-column">
+                            <label class="form__label" for="first-name">FIRST NAME:*</label>
+                            <input class="form__input" type="text" id="first-name" placeholder="First Name">
+                        </div>
+                        <div class="form-group d-flex flex-column">
+                            <label class="form__label" for="last-name">LAST NAME:*</label>
+                            <input class="form__input" type="text" id="last-name" placeholder="Last Name">
+                        </div>
+                        <div class="form-group d-flex flex-column">
+                            <label class="form__label" for="email">EMAIL:*</label>
+                            <input class="form__input" type="email" id="email" placeholder="example@example.com">
+                        </div>
+                        <div class="form-group d-flex flex-column">
+                            <label class="form__label" for="user-name">USERNAME:*</label>
+                            <input class="form__input" type="text" id="user-name" placeholder="Enter Username">
+                        </div>
+                        <div class="form-group d-flex flex-column">
+                            <label class="form__label" for="PASSWORD">PASSWORD:*</label>
+                            <input class="form__input" type="password" id="PASSWORD" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group d-flex flex-column">
+                            <label class="form__label" for="cpassword">CONFIRM PASSWORD:*</label>
+                            <input class="form__input" type="password" id="cpassword" placeholder="Confirm Password">
+                        </div>
+                        <div class="my-3">
+                            <button class="form__btn form__btn-1" type="button">Sign up</button>
+                            <button class="form__btn form__btn-2" type="button">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container-xl d-flex justify-content-between footer__nav low-res">
+                <ul class="list-unstyled d-flex footer__ul">
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">HOME</a></li>
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">SEARCH</a></li>
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">ABOUT US</a></li>
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">ADVERTISE</a></li>
+                </ul>
+                <ul class="list-unstyled d-flex footer__ul">
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">FACEBOOK</a></li>
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">TWITTER</a></li>
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">BLOG</a></li>
+                    <li class="footer__ul-li"><a class="text-decoration-none footer__ul-a" href="#">GOOGLE+</a></li>
+                </ul>
+            </div>
+            <div class="footer__circle"><i class="fas fa-map-marker-alt footer__circle-icon"></i></div>
+        </div>
+        <div class="footer__secondary">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-lg-4 col-12 footer__secondary-container">
+                        <h4 class="footer__secondary-container--heading">SUBSCRIBE</h4>
+                        <div>
+                            <input class="footer__secondary-input" type="text" placeholder="your@example.com"><button
+                                class="footer__secondary-btn">SEND</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 footer__secondary-container">
+                        <h4 class="footer__secondary-container--heading">CONTACT</h4>
+                        <p class="footer__secondary-container--text">Have a question or query.</p>
+                        <p><a class="footer__secondary-container--link" href="#">info@patashule.com</a></p>
+                    </div>
+                    <div class="col-lg-4 col-12 footer__secondary-container">
+                        <h4 class="footer__secondary-container--heading">ABOUT</h4>
+                        <p class="footer__secondary-container--text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Quam accusantium animi nostrum ipsum <a class="footer__secondary-container--link"
+                                href="#">Learn more...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container-xl d-flex justify-content-between align-items-center h-100">
+                <div>
+                    <i class="fab fa-twitter footer-bottom__icon"></i>
+                    <i class="fab fa-google-plus-g footer-bottom__icon"></i>
+                    <i class="fab fa-facebook-square footer-bottom__icon"></i>
+                    <i class="fab fa-linkedin footer-bottom__icon"></i>
+                    <i class="fas fa-rss-square footer-bottom__icon"></i>
+                </div>
+                <p class="mb-0 footer-bottom__text">&copy; 2020 All rights reserved<span class="footer-extra">, Designed
+                        by PATASHULE.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

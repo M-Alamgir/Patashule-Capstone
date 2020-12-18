@@ -1,0 +1,22 @@
+.map {
+  margin: 5rem 0;
+
+  &__title {
+    @include reuse(2rem, $color-primary, 500);
+  }
+}
+
+.google-map {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}

@@ -1,0 +1,195 @@
+.footer {
+  position: relative;
+
+  @include footer-reuse($color-black, 20rem);
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
+  }
+
+  &__ul {
+    margin-bottom: 0;
+
+    &-li {
+      padding: 2rem 2.2rem;
+    }
+
+    &-li:hover {
+      background-color: $color-grey;
+      cursor: pointer;
+    }
+
+    &-a,
+    &-a:hover {
+      @include reuse(1.7rem, $color-white, 600);
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include footer-reuse($color-black, 14rem);
+
+    width: 14rem;
+    border-radius: 50%;
+    border: 1px solid $color-white;
+
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include reuse(6rem, $color-white, 500);
+    }
+  }
+
+  &__circle:hover {
+    cursor: pointer;
+
+    @include footer-reuse($color-grey, 14rem);
+  }
+}
+
+.footer__secondary {
+  @include footer-reuse($color-black, 15rem);
+
+  &-container {
+    text-align: center;
+
+    &--heading {
+      margin-bottom: 1rem;
+
+      @include reuse(1.5rem, $color-white, 600);
+    }
+
+    &--text {
+      @include reuse(1.4rem, $color-grey, 500);
+    }
+
+    &--link,
+    &--link:hover {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+
+  &-input {
+    background-color: $color-black;
+    color: $color-grey;
+    border: 2px solid $color-grey;
+    padding: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+  }
+
+  &-btn {
+    background-color: $color-grey;
+
+    @include reuse(1rem, $color-white, 500);
+
+    padding: 0.7rem 1rem;
+    border: 2px solid $color-grey;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+  }
+}
+
+.footer-bottom {
+  @include footer-reuse($color-dark, 4rem);
+
+  &__icon {
+    @include reuse(2rem, $color-btn, 500);
+
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__text {
+    @include reuse(1.3rem, $color-btn, 500);
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__ul {
+      &-a,
+      &-a:hover {
+        @include reuse(1.4rem, $color-white, 600);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    @include footer-reuse($color-black, 15rem);
+
+    &__ul {
+      &-li {
+        padding: 1.6rem 1.8rem;
+      }
+
+      &-a,
+      &-a:hover {
+        @include reuse(1.2rem, $color-white, 600);
+      }
+    }
+
+    &__circle {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__secondary {
+    @include footer-reuse($color-black, 30rem);
+
+    padding: 0 4rem;
+
+    &-container {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .low-res {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-extra {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .footer {
+    @include footer-reuse($color-black, 50rem);
+
+    &__ul {
+      flex-direction: column;
+    }
+  }
+
+  .footer__secondary {
+    @include footer-reuse($color-black, 45rem);
+  }
+
+  .footer-bottom {
+    &__icon {
+      @include reuse(1.5rem, $color-btn, 500);
+    }
+  }
+}

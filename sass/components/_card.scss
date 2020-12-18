@@ -1,0 +1,45 @@
+.card {
+  border: none;
+  text-align: center;
+  margin: 5rem 0;
+
+  &__container {
+    padding: 0 18rem;
+  }
+
+  &__title {
+    @include reuse(1.8rem, $color-primary, 600);
+  }
+
+  &__icon {
+    font-size: 3rem;
+    color: $color-dark;
+    margin: 2.5rem 0;
+  }
+
+  &__heading {
+    @include reuse(1.7rem, $color-dark, 700);
+
+    margin-bottom: 2.5rem;
+  }
+
+  &__text {
+    @include reuse(1.2rem, $color-dark, 500);
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    &__container {
+      padding: 0 10rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    &__container {
+      padding: 0 4rem;
+    }
+  }
+}

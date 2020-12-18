@@ -1,0 +1,10 @@
+@mixin reuse($size, $color, $weight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+}
+
+@mixin footer-reuse($color, $height) {
+  background-color: $color;
+  height: $height;
+}
